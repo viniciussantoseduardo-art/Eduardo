@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eduardo Vinicius Agro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8f3;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    color:white;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#7CFC00;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    font-size:20px;
+    margin:15px 0;
+}
+
+.btn{
+    background:#2e8b57;
+    color:white;
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#246b44;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+    color:#2e8b57;
+    font-size:36px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.sobre img{
+    width:100%;
+    border-radius:15px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    background:#2e8b57;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1f3b2d;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.assinatura{
+    margin-top:10px;
+    font-weight:bold;
+    color:#7CFC00;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:40px;
+    }
+
+    .sobre{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+<div class="logo">Eduardo Vinicius Agro</div>
+
+<div class="menu">
+<a href="#inicio">Início</a>
+<a href="#servicos">Serviços</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</div>
+</nav>
+
+<div class="hero" id="inicio">
+<h1>Inovação no Agronegócio</h1>
+<p>Tecnologia, produtividade e sustentabilidade para o campo.</p>
+<a href="#contato" class="btn">Solicitar Consultoria</a>
+</div>
+
+</header>
+
+<section id="servicos">
+<h2 class="titulo">Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80">
+<h3>Agricultura Inteligente</h3>
+<p>Monitoramento de lavouras com tecnologia avançada.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=800&q=80">
+<h3>Pecuária Moderna</h3>
+<p>Soluções para aumentar a produtividade do rebanho.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80">
+<h3>Gestão Rural</h3>
+<p>Planejamento e controle eficiente da propriedade.</p>
+</div>
+
+</div>
+</section>
+
+<section id="sobre">
+
+<div class="sobre">
+
+<div>
+<h2 class="titulo">Sobre Os trabalhadores
+</h2>
+
+<p>
+Especialista em agronegócio, oferecendo soluções modernas
+para produtores rurais. Nosso objetivo é unir tecnologia,
+sustentabilidade e rentabilidade.
+</p>
+
+<br>
+
+<p>
+Atuamos em consultoria agrícola, pecuária, gestão de fazendas
+e transformação digital no campo.
+</p>
+
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1200&q=80">
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Eduardo Vinicius Agro</h3>
+
+<p>Transformando o agronegócio com inovação.</p>
+
+<div class="assinatura">
+© 2026 - Eduardo Vinicius
+</div>
+
+</footer>
+</body>
+</html>
